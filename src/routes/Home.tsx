@@ -56,7 +56,7 @@ const Home = () => {
       <section className="bg-gradient-to-br from-carambar-yellow via-carambar-orange to-carambar-red text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="animate-bounce-slow inline-block mb-6">
-            <img src="/carambar.png" alt="Carambar" className="h-32 w-auto" />
+            <img src="./carambar.png" alt="Carambar" className="h-32 w-auto" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
             Bienvenue chez Carambar Jokes !

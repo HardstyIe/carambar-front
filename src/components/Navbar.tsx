@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:scale-105 transition-transform">
-            <img src="/carambar.png" alt="Carambar" className="h-12 w-auto" />
+            <img src="./carambar.png" alt="Carambar" className="h-12 w-auto" />
             <span className="text-3xl font-bold text-white drop-shadow-lg">
               Carambar Jokes
             </span>
