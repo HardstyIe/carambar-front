@@ -1,13 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import type { Joke } from 'src/types/jokeType';
 
-interface Joke {
-  id: number;
-  question: string;
-  answer: string;
-  createdAt?: string;
-  updatedAt?: string;
-}
 
 interface JokeCardProps {
   joke: Joke;

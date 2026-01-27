@@ -1,14 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getRandomJoke } from '../api/jokes';
 import JokeCard from '../components/JokeCard';
-
-interface Joke {
-  id: number;
-  question: string;
-  answer: string;
-  createdAt?: string;
-  updatedAt?: string;
-}
+import type { Joke } from 'src/types/jokeType';
 
 const RandomJoke = () => {
   const [joke, setJoke] = useState<Joke | null>(null);

@@ -1,14 +1,8 @@
 import { useEffect, useState } from 'react';
 import { getAllJokes } from '../api/jokes';
 import JokeCard from '../components/JokeCard';
+import type { Joke } from 'src/types/jokeType';
 
-interface Joke {
-  id: number;
-  question: string;
-  answer: string;
-  createdAt?: string;
-  updatedAt?: string;
-}
 
 const AllJokes = () => {
   const [jokes, setJokes] = useState<Joke[]>([]);

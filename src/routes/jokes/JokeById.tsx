@@ -1,14 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { getJokeById } from '../../api/jokes';
+import type { Joke } from 'src/types/jokeType';
 
-interface Joke {
-  id: number;
-  question: string;
-  answer: string;
-  createdAt?: string;
-  updatedAt?: string;
-}
 
 const JokeById = () => {
   const { id } = useParams<{ id: string }>();
